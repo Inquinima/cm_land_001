@@ -2079,9 +2079,9 @@ body {
   }
 }
 
-* {
+/* * {
   border: red 1px solid;
-}
+} */
 
 .placeholder\:text-center::-moz-placeholder {
   text-align: center;
