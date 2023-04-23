@@ -54,12 +54,6 @@ $(()=>{
             }
         }
     });
-    // function closeE(e){}
-    // if(popupActive){L
-    //     $(window).on('keydown', function(e) {
-            
-    //     });
-    // }
 });
 
 
@@ -124,6 +118,5 @@ $(()=>{
             consentPopup.fadeIn();
         }, 2000);
     }
-
 });
 

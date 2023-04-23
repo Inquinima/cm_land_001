@@ -1209,6 +1209,10 @@ video {
   row-gap: 3.75vw;
 }
 
+.gap-y-cm-sm-20 {
+  row-gap: 5.556vw;
+}
+
 .place-self-center {
   place-self: center;
 }
@@ -2079,10 +2083,6 @@ body {
   }
 }
 
-/* * {
-  border: red 1px solid;
-} */
-
 .placeholder\:text-center::-moz-placeholder {
   text-align: center;
 }
@@ -2647,6 +2647,10 @@ body {
 
   .max-sm\:gap-y-cm-sm-8 {
     row-gap: 2.222vw;
+  }
+
+  .max-sm\:gap-y-cm-sm-20 {
+    row-gap: 5.556vw;
   }
 
   .max-sm\:overflow-x-hidden {
