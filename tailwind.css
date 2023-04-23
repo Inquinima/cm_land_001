@@ -830,6 +830,10 @@ video {
   margin-top: 0.375vw;
 }
 
+.mb-cm-desktop-10 {
+  margin-bottom: 0.625vw;
+}
+
 .block {
   display: block;
 }
@@ -1502,6 +1506,10 @@ video {
   font-size: 8.333vw;
 }
 
+.text-\[0\.785vw\] {
+  font-size: 0.785vw;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -1612,14 +1620,6 @@ video {
 
 .transition-all {
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-colors {
-  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -2356,6 +2356,10 @@ body {
 
   .max-sm\:mt-cm-sm-90 {
     margin-top: 25.000vw;
+  }
+
+  .max-sm\:mb-cm-sm-18 {
+    margin-bottom: 5.000vw;
   }
 
   .max-sm\:block {
