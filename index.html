@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="tailwind.css">
   <title>Preset ready</title>
-</head><body class="tracking-normal body max-sm:overflow-x-hidden">
+</head><body class="tracking-normal body">
 <header class="header absolute top-0 -translate-x-1/2 left-1/2 w-[72.5vw] max-sm:w-cm-sm-340 pt-cm-desktop-24 max-sm:pt-cm-sm-16">
   <div class="flex flex-row justify-between w-full">
     <div class="flex flex-row items-center"><img class="inline-block w-cm-desktop-106 h-cm-desktop-42 mr-cm-desktop-14 max-sm:w-cm-sm-106 max-sm:h-cm-sm-42 max-sm:mr-cm-sm-12" src="assets/img/logo.svg" alt="Логотип">
@@ -181,10 +181,10 @@
       </div>
     </div>
   </section>
-  <section class="section cta mt-[8.25vw] max-sm:mt-cm-sm-100">
+  <section class="section cta mt-[8.25vw] max-sm:mt-cm-sm-100 max-sm:overflow-y-visible relative z-10">
     <div class="container-vw --xxl">
       <div class="grid grid-cols-12 items-center rounded-cm-desktop-20 w-full bg-[#F2F7FF] max-sm:rounded-[8.33vw] overflow-visible  max-sm:grid-cols-1 max-sm:h-[194.78vw] max-sm:items-start max-sm:pt-[14.722vw] pt-[4.125vw] pb-[4.5vw] max-sm:max-w-full max-sm:pb-0">
-        <div class="relative h-full col-span-5 max-sm:order-2 max-sm:w-full max-sm:z-[5] max-sm:h-0"><img class="absolute block w-cm-desktop-640 h-cm-desktop-594 max-w-none -translate-y-[45%] right-0 top-1/2 max-sm:w-[177.78vw] max-sm:h-[164.72vw] max-sm:max-w-none max-sm:-translate-y-[48%] max-sm:translate-x-[18%] max-sm:-top-1/2 max-sm:scale-[0.8] max-sm:pointer-events-none" src="assets/img/guide.png" alt="Открытая книга"></div>
+        <div class="relative h-full col-span-5 max-sm:order-2 max-sm:w-full max-sm:z-[5] max-sm:h-0"><img class="absolute block w-cm-desktop-640 h-cm-desktop-594 max-w-none -translate-y-[45%] right-0 top-1/2 max-sm:w-[177.78vw] max-sm:h-[164.72vw] max-sm:max-w-none max-sm:-translate-y-[48%] max-sm:translate-x-[18%] max-sm:-top-1/2 max-sm:scale-[0.8] max-sm:pointer-events-none z-[20] isolate max-sm:hidden" src="assets/img/guide.png" alt="Открытая книга"><img class="absolute max-w-none -translate-y-[45%] -left-[2.778vw] top-1/2 max-sm:-translate-y-[48%] max-sm:-top-1/2 max-sm:pointer-events-none max-sm:block sm:hidden w-[100vw] text-cm-sm-10" src="assets/img/guide_mob.png" alt="Открытая книга"></div>
         <div class="col-span-7 pl-cm-desktop-60 max-sm:order-1 max-sm:text-center max-sm:z-10 relative max-sm:pl-0"><span class="text-cm-desktop-26 max-sm:text-cm-sm-16">Скачайте гайд</span>
           <h2 class="font-bold text-cm-desktop-40 mt-cm-desktop-6 mb-cm-desktop-24 max-sm:text-center  max-sm:max-w-none max-sm:mb-cm-sm-26 max-sm:mt-cm-sm-10 max-sm:text-cm-sm-30 max-sm:leading-cm-110">Отдел маркетинга <br> своими руками</h2>
           <p class="italic text-cm-desktop-20 max-sm:text-center max-sm:max-w-none max-sm:text-cm-sm-16 max-sm:leading-snug">Практическое пособие от Антона Петроченкова для тех, кто <br class="max-sm:hidden"> хочет открыть <br class="sm:hidden"> и эффективно управлять отделом <br class="sm:hidden"> маркетинга</p>
@@ -225,11 +225,11 @@
     </div>
   </section>
 </main>
-<div class="sticky bottom-0 bg-cm-accent-blue h-cm-desktop-100 max-sm:hidden z-[70]">
+<div class="sticky bottom-0 bg-cm-accent-blue h-cm-desktop-100 z-[70] max-sm:h-cm-sm-80">
   <div class="container-vw h-full">
     <div class="flex flex-row justify-between items-center h-full">
-      <div class="flex flex-row items-center text-white gap-x-cm-desktop-38"><img class="lozad w-cm-desktop-60 h-cm-desktop-60 block" src="assets/img/book.png" data-src="assets/img/book.png" alt="Книга"><span class="font-bold leading-cm-130 text-cm-desktop-28">Скачайте руководство по созданию <br> отдела маркетинга  в компании</span></div>
-      <button class="rounded-cm-desktop-10 text-cm-accent-blue bg-white font-bold uppercase show-popup text-cm-desktop-16 font-black w-cm-desktop-220 h-cm-desktop-60 duration-500" type="button">Скачать материал</button>
+      <div class="flex flex-row items-center text-white gap-x-cm-desktop-38 max-sm:hidden"><img class="lozad w-cm-desktop-60 h-cm-desktop-60 block" src="assets/img/book.png" data-src="assets/img/book.png" alt="Книга"><span class="font-bold leading-cm-130 text-cm-desktop-28">Скачайте руководство по созданию <br> отдела маркетинга  в компании</span></div>
+      <button class="rounded-cm-desktop-10 text-cm-accent-blue bg-white font-bold uppercase show-popup text-cm-desktop-16 font-black w-cm-desktop-220 h-cm-desktop-60 duration-500 max-sm:text-cm-sm-16 max-sm:w-cm-sm-300 max-sm:h-cm-sm-50 max-sm:mx-auto max-sm:rounded-cm-sm-10" type="button">Скачать материал</button>
     </div>
   </div>
 </div>
@@ -239,14 +239,14 @@
       <div class="flex flex-row items-center max-sm:mb-cm-sm-12"><img class="inline-block w-cm-desktop-106 h-cm-desktop-42 mr-cm-desktop-14 max-sm:w-cm-sm-106 max-sm:h-cm-sm-40" src="assets/img/logo.svg" alt="Логотип">
         <div class="text-white opacity-60 inline-block leading-cm-120 text-cm-desktop-10 border-l -translate-y-[2px] pl-cm-desktop-14 max-sm:hidden"><span class="block">Академия</span><span class="block">Digital-маркетинга</span></div>
       </div>
-      <div class="flex flex-col text-right gap-y-cm-desktop-10 max-sm:text-center max-sm:gap-y-cm-sm-10"><a class="text-cm-desktop-16 text-cm-hover-blue leading-none max-sm:text-cm-sm-16" href="#">Политика конфиденциальности</a><a class="text-cm-desktop-16 text-cm-hover-blue leading-none max-sm:text-cm-sm-16" href="#">Пользовательское соглашение</a></div>
+      <div class="flex flex-col text-right gap-y-cm-desktop-10 max-sm:text-center max-sm:gap-y-cm-sm-10"><a class="text-cm-desktop-16 text-white leading-none duration-500 transition hover:text-cm-hover-blue max-sm:text-cm-sm-16" href="#">Политика конфиденциальности</a><a class="text-cm-desktop-16 text-white leading-none duration-500 transition hover:text-cm-hover-blue max-sm:text-cm-sm-16" href="#">Пользовательское соглашение</a></div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/libs.min.js"> </script>
     <script src="assets/js/main.js"></script>
   </div>
 </footer>
-<div class="cookie fixed hidden rounded-cm-desktop-20 py-cm-desktop-14 px-cm-desktop-32 bottom-[7.375vw] left-[5.5vw] bg-[#CEDFF2] z-[155] max-sm:w-[88.89vw] max-sm:h-[16.67vw] max-sm:left-1/2 max-sm:-translate-x-1/2 max-sm:rounded-usual-sm" id="consent-popup">
+<div class="cookie fixed hidden rounded-cm-desktop-20 py-cm-desktop-14 px-cm-desktop-32 bottom-[7.375vw] left-[5.5vw] bg-[#CEDFF2] z-[80] max-sm:w-[88.89vw] max-sm:h-[16.67vw] max-sm:left-1/2 max-sm:-translate-x-1/2 max-sm:rounded-usual-sm max-sm:bottom-[25.5vw]" id="consent-popup">
   <div class="flex flex-row justify-center items-center text-cm-desktop-20 gap-x-cm-desktop-40  max-sm:w-full max-sm:h-full"><span class="max-sm:text-[3.88vw]">Мы используем <a class="text-cm-accent-blue transition ease-out duration-500 max-sm:rounded-cm-sm-20 hover:text-cm-hover-blue max-sm:text-cm-sm-14" href="#">Cookie</a></span>
     <button class="button --blue duration-500 text-white inline-block w-cm-desktop-220 h-cm-desktop-60 max-sm:w-cm-sm-120 max-sm:h-cm-sm-40 max-sm:text-cm-sm-14 max-sm:font-black max-sm:rounded-cm-sm-5" id="accept">Хорошо</button>
   </div>
@@ -254,7 +254,7 @@
 <div class="overlay hidden max-sm:overflow-y-scroll"></div>
 <form class="popup hidden overflow-visible w-cm-desktop-760 h-cm-desktop-550 rounded-cm-desktop-20 max-sm:w-[94.444vw] max-sm:h-auto max-sm:h-max-[100vh] max-sm:mx-[2.78vw] max-sm:grid-cols-1 max-sm:rounded-cm-sm-20 max-sm:-translate-x-[53%]">
   <div class="grid grid-cols-8 h-full relative max-sm:grid-cols-1 max-sm:py-[6.95vw]">
-    <button class="absolute close-popup w-cm-desktop-20 h-cm-desktop-20 top-[1.25vw] right-[1.25vw] max-sm:w-cm-sm-18 max-sm:h-cm-sm-18 max-sm:top-[5.556vw] max-sm:right-[5.556vw]" type="button"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <button class="absolute close-popup w-cm-desktop-20 h-cm-desktop-20 top-0 right-0 p-cm-desktop-20 max-sm:w-cm-sm-18 max-sm:h-cm-sm-18 max-sm:p-cm-sm-8 max-sm:top-[4vw] max-sm:right-[4vw]" type="button"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 1L11 11M11 1L1 11" stroke="#A5B4CE" stroke-linecap="round"/>
 </svg>
     </button>
@@ -262,7 +262,7 @@
     <div class="col-span-5 self-center place-self-center pl-cm-desktop-60 pr-cm-desktop-80 py-cm-desktop-50 w-cm-desktop-300 max-sm:w-full max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center"><span class="inline-block leading-cm-110 bg-cm-accent-blue text-white text-center py-cm-desktop-10 px-cm-desktop-16 mb-cm-desktop-30 rounded-cm-desktop-5 whitespace-nowrap text-[0.785vw] max-sm:py-cm-sm-8 max-sm:px-cm-sm-12 max-sm:w-fit max-sm:text-[2.78vw] max-sm:rounded-cm-sm-5 max-sm:mb-cm-sm-16">Скачайте гайд по созданию отдела маркетинга</span><span class="block leading-none font-bold text-cm-desktop-30 mb-cm-desktop-20  max-sm:text-cm-sm-20 max-sm:text-center max-sm:mb-cm-sm-12">Отдел маркетинга <br> своими руками</span><span class="block leading-cm-140 font-bold text-cm-desktop-16 max-sm:text-cm-sm-16 max-sm:text-center max-sm:px-cm-sm-26 max-sm:font-normal">Гайд по созданию эффективного <br> отдела продаж в компании</span><img class="hidden max-sm:block max-sm:w-cm-sm-208 max-sm:h-cm-sm-236 max-sm:scale-125" src="assets/img/popup_book.png" data-src="assets/img/popup_book.png" alt="Книга">
       <div class="text-cm-desktop-16 flex flex-col gap-y-cm-desktop-10 mt-cm-desktop-30">
         <label class="leading-cm-120 text-center text-cm-desktop-14 text-[#C4C4C4] max-sm:text-cm-sm-14" for="useremail">Оставьте свои контакты <br> и получите бесплатный материал:</label>
-        <input class="border text-center text-cm-desktop-16 mx-auto outline-none text-[#252D4D] placeholder:text-cm-desktop-16 placeholder:text-[#C4C4C4] placeholder:text-center w-cm-desktop-300 h-cm-desktop-80 rounded-cm-desktop-10 max-sm:w-cm-sm-280 max-sm:h-cm-sm-70  max-sm:rounded-cm-sm-10 max-sm:text-cm-sm-16 max-sm:placeholder:text-cm-sm-16 max-sm:mx-auto max-sm:mt-cm-sm-18" id="useremail" type="email" name="useremail" placeholder="Введите ваш e-mail" required>
+        <input class="border text-center text-cm-desktop-16 mx-auto outline-none text-[#252D4D] placeholder:text-cm-desktop-16 placeholder:text-[#C4C4C4] placeholder:text-center w-cm-desktop-300 h-cm-desktop-80 rounded-cm-desktop-10 max-sm:w-cm-sm-280 max-sm:h-cm-sm-70  max-sm:rounded-cm-sm-10 max-sm:text-cm-sm-16 max-sm:placeholder:text-cm-sm-16 max-sm:mx-auto max-sm:mt-cm-sm-18" id="useremail" type="email" name="useremail" placeholder="Введите ваш e-mail">
         <button class="button --pink mx-auto duration-500 w-cm-desktop-300 h-cm-desktop-80 max-sm:w-cm-sm-280 max-sm:h-cm-sm-70 max-sm:text-cm-sm-16 max-sm:rounded-cm-sm-10 max-sm:mx-auto max-sm:my-cm-sm-10" type="submit">получить гайд</button><span class="block text-center text-cm-desktop-10 max-sm:text-cm-sm-10">Нажимая на кнопку, вы соглашаетесь с <a class="italic text-cm-accent-blue" href="#">“Политикой конфиденциальности”</a> и <a class="italic text-cm-accent-blue" href="#">“Пользовательским соглашением”</a></span>
       </div>
     </div>

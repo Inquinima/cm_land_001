@@ -20,15 +20,61 @@ $(()=>{
             default:
         }
     }
+    const regexExclude =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     $('#useremail').on('input', function(){
-        const regexExclude =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        // const regexExclude =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         if(regexExclude.test($(this).val()) && $(this).val().length >= 5){
             $(this).css('border-color', '#C3C3C3');
         } else{
             $(this).css('border-color', '#F5265C');
         }
     });
+
+    function validate(form) {
+        var fields;
+        try {
+          fields = form.querySelectorAll("#useremail");
+        } catch (e) {
+          console.log('err');
+          return true;
+        }
+        var arr = [];
+        console.log(fields);
+        fields.forEach(function (field) {
+          if (!field.value || field.value === "") {
+            field.classList.add("invalid");
+            arr.push(false);
+            return;
+          }
+          field.classList.remove("invalid");
+          arr.push(true);
+        });
+        if (arr.find(function (el) {
+          return el === false;
+        }) === false) return false;
+        console.log('ookkk');
+        return true;
+      }
+
+      var forms = document.querySelectorAll('.popup');
+      console.log(forms);
+      forms.forEach(function (form) {
+        form.addEventListener("submit", function (e) {
+          if (!validate(form)) {
+            e.preventDefault();
+            return;
+          }
+          console.log('ok');
+        });
+      });
+
+    // $('form.popup').on("submit", function (e) {
+    //     if(!regexExclude.test($('#useremail').val()) && (!$('#useremail').val().length >= 5) && (!$('#useremail').val().length != 0)){
+    //         $('#useremail').css('border-color', '#C3C3C3');
+    //         e.preventDefault();
+    //     }
+    // });
 
     $('.show-popup').on('click', function(){
         popupSwitch();
@@ -62,6 +108,8 @@ $(()=>{
         }
     });
 });
+
+
 
 
 $(()=>{
